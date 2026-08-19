@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+.header p {
+  color: #030509;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.filter-bar input,
+.filter-bar select,
+.filter-bar button {
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+}
+
+.filter-bar input {
+  flex: 1;
+  min-width: 200px;
+}
+
+.filter-bar button {
+  cursor: pointer;
+}
+
+.filter-bar button.active {
+  background: #111827;
+  color: white;
+}
+
+.results {
+  margin-bottom: 15px;
+  color: #6b7280;
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.post-card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #111827;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+}
+
+.post-header h3 {
+  font-size: 16px;
+}
+
+.post-header span {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.post-content {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.post-footer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.post-footer button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 25px 15px;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .filter-bar {
+    flex-direction: column;
+  }
+
+  .filter-bar input,
+  .filter-bar select,
+  .filter-bar button {
+    width: 100%;
+  }
+}
