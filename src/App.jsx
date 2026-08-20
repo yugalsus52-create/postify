@@ -2,14 +2,24 @@ import { useMemo, useState } from "react";
 import FilterBar from "./components/FilterBar";
 import PostList from "./components/PostList";
 import postsData from "./data/Posts";
-
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
+import 'App.jsx';
 function App() {
+  const[isLoggedIn,setISLoggedIn]=useState(localStorage.getItem("isLoggedIn") === "true");
   const [posts, setPosts] = useState(postsData);
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
   const [sort, setSort] = useState("newest");
   const [trending, setTrending] = useState(false);
 
+const handleLogin = () => {
+    setIsLoggedIn(true);
+  };
+  const handleLogout = () => {
+    localStorage.removeItem("isLoggedIn");
+    setIsLoggedIn(false);
+  };
   const filteredPosts = useMemo(() => {
     let result = [...posts];
 
@@ -65,6 +75,7 @@ function App() {
   }
 
   return (
+    
     <main className="container">
       <header className="header">
         <h1>POSTIFY</h1>
@@ -92,6 +103,7 @@ function App() {
       />
     </main>
   );
+ 
 }
 
-export default App;
+export default App; 
