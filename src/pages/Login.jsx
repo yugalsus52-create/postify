@@ -14,7 +14,7 @@ function Login({ onLogin }) {
     }
 
     // Temporary login validation
-    if (email === "user@gmail.com" && password === "123456") {
+    if (email === "yugal@gmail.com" && password === "0424") {
       localStorage.setItem("isLoggedIn", "true");
 
       onLogin();
@@ -70,7 +70,7 @@ function Login({ onLogin }) {
         </form>
 
         <p className="demo-login">
-          Demo: user@gmail.com / 123456
+          Demo: yugal@gmail.com / 0424
         </p>
 
       </div>

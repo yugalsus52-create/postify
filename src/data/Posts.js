@@ -1,7 +1,7 @@
  const posts = [
   {
     id: 1,
-    username: "Alex",
+    username: "Rishib",
     category: "Technology",
     content: "Learning React is actually really fun!",
     likes: 124,
@@ -11,7 +11,7 @@
   },
   {
     id: 2,
-    username: "Sarah",
+    username: "Aavas",
     category: "Music",
     content: "Just discovered an amazing album today.",
     likes: 86,
@@ -21,7 +21,7 @@
   },
   {
     id: 3,
-    username: "Daniel",
+    username: "Av_sek",
     category: "Gaming",
     content: "Finally completed my favorite game!",
     likes: 210,
@@ -41,7 +41,7 @@
   },
   {
     id: 5,
-    username: "John",
+    username: "Krish",
     category: "Technology",
     content: "Understanding JavaScript before React makes everything easier.",
     likes: 178,
@@ -51,7 +51,7 @@
   },
   {
     id: 6,
-    username: "Emma",
+    username: "Yugal",
     category: "Fitness",
     content: "Consistency is more important than motivation.",
     likes: 72,
